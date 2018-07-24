@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sZb-ao-Reu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ZHU-p5-592">
+            <objects>
+                <viewController id="sZb-ao-Reu" customClass="ViewController" customModule="_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ch3-2k-Mac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWB-Lz-6Ma">
+                                <rect key="frame" x="8" y="283.5" width="359" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EWV-qH-deQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwN-R4-P0a">
+                                <rect key="frame" x="127" y="100" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="hkD-Hx-DLc"/>
+                                    <constraint firstAttribute="width" constant="120" id="jQi-dz-5gf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="🎱"/>
+                                <connections>
+                                    <action selector="flipEightBall:" destination="sZb-ao-Reu" eventType="touchUpInside" id="b9z-qQ-WoM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AZ9-SU-BAQ" firstAttribute="trailing" secondItem="JWB-Lz-6Ma" secondAttribute="trailing" constant="8" id="HUn-Bj-Jjp"/>
+                            <constraint firstItem="UwN-R4-P0a" firstAttribute="top" secondItem="AZ9-SU-BAQ" secondAttribute="top" constant="80" id="NEF-cy-LKb"/>
+                            <constraint firstItem="JWB-Lz-6Ma" firstAttribute="centerY" secondItem="ch3-2k-Mac" secondAttribute="centerY" id="Nrv-Ji-9qk"/>
+                            <constraint firstItem="UwN-R4-P0a" firstAttribute="centerX" secondItem="ch3-2k-Mac" secondAttribute="centerX" id="R4F-mh-QId"/>
+                            <constraint firstItem="JWB-Lz-6Ma" firstAttribute="leading" secondItem="AZ9-SU-BAQ" secondAttribute="leading" constant="8" id="m2x-VW-fdY"/>
+                            <constraint firstItem="JWB-Lz-6Ma" firstAttribute="centerX" secondItem="ch3-2k-Mac" secondAttribute="centerX" id="ofj-nv-7Ff"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AZ9-SU-BAQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="JWB-Lz-6Ma" id="OlV-ZF-PkR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjv-pF-0qw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="126"/>
+        </scene>
+    </scenes>
+</document>
